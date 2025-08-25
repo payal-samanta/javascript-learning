@@ -1,5 +1,5 @@
 DAY - 1 BASIC
-
+-- Console_playground--
 * Js- a programming lang. that add interactivity to websites.
 * HTML = structure (skeleton), CSS = style (looks), JS = behavior (actions).
 * 2. Client-side vs Server-side JS
@@ -51,6 +51,44 @@ DAY - 1 BASIC
         Open DevTools → Sources tab → click on line number in your JS file → Blue marker = breakpoint.
         When you refresh the page, code pauses at that line → you can check values.
      3. Watch Expressions → In DevTools, you can “watch” a variable and see how it changes as code runs.
+
+--Temperature_Converter--
+* 1. A variable is like a box where you store data.
+     1. var = Allows redeclaration
+     2. let = Cannot redeclare in the same block
+     3. const = Use const for fixed values (like pi, API_KEY).
+
+* 2. Hoisting
+     JavaScript moves variable declarations to the top of their scope before execution.
+      console.log(a); // undefined (because var is hoisted)
+      var a = 10;
+
+     console.log(b); // ❌ Error (ReferenceError)
+     let b = 20;
+    
+* 3. Data Types
+     (A) Primitive Data Types (simple values)
+         string → "Hello", 'Payal'
+         number → 42, 3.14
+         boolean → true, false
+         null → empty value
+         undefined → declared but no value
+         symbol → unique identifier
+         bigint → very large numbers
+        
+    (B) Reference Data Types (complex values)
+         Object → { key: value }
+         Array → [1, 2, 3]
+         Function → function() { ... }
+         
+
+
+
+
+
+
+
+
 
 
 
