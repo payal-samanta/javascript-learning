@@ -82,8 +82,8 @@ DAY - 1
          bigint → very large numbers
         
     (B) Reference Data Types (complex values)
-         Object → { key: value }
          Array → [1, 2, 3]
+         Object → { key: value }
          Function → function() { ... }
          
 DAY 2 - OPERATORS
