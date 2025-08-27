@@ -1,5 +1,6 @@
-DAY - 1 BASIC
--- Console_playground--
+DAY - 1 
+   1 BASIC
+---Console_playground---
 * Js- a programming lang. that add interactivity to websites.
 * HTML = structure (skeleton), CSS = style (looks), JS = behavior (actions).
 * 2. Client-side vs Server-side JS
@@ -52,7 +53,9 @@ DAY - 1 BASIC
         When you refresh the page, code pauses at that line → you can check values.
      3. Watch Expressions → In DevTools, you can “watch” a variable and see how it changes as code runs.
 
---Temperature_Converter--
+   2 Variable & Data types
+---Temperature_Converter---
+
 * 1. A variable is like a box where you store data.
      1. var = Allows redeclaration
      2. let = Cannot redeclare in the same block
@@ -81,8 +84,50 @@ DAY - 1 BASIC
          Array → [1, 2, 3]
          Function → function() { ... }
          
+DAY 2 - OPERATORS
+---Simple_Calculator---
 
+* 1. Arthimatic Operation 
+    let a = 10, b = 3;
+     console.log(a + b);  // 13 (addition)
+     console.log(a - b);  // 7  (subtraction)
+     console.log(a * b);  // 30 (multiplication)
+     console.log(a / b);  // 3.333... (division)
+     console.log(a % b);  // 1 (remainder)
+     console.log(a ** b); // 1000 (exponentiation: 10³)
 
+* 2. Increment & Decrement
+    let x = 5;
+     console.log(++x); // 6 (prefix → increase first, then use)
+     console.log(x++); // 6 (postfix → use first, then increase)
+     console.log(x);   // 7
+
+* 3. Assignment Operators
+    let y = 10;
+     y += 5; // y = y + 5 → 15
+     y -= 3; // y = y - 3 → 12
+     y *= 2; // y = y * 2 → 24
+     y /= 4; // y = y / 4 → 6
+
+* 4. Comparison Operators
+     console.log(5 == "5");  // true  (loose equality → checks value only)
+     console.log(5 === "5"); // false (strict equality → checks value + type)
+
+     console.log(5 != "5");  // false (loose inequality)
+     console.log(5 !== "5"); // true  (strict inequality)
+
+     console.log(10 > 5);   // true
+     console.log(10 <= 5);  // false
+
+* 5. Logical Operators
+     let age = 20;
+
+     console.log(age > 18 && age < 30); // true (AND → both true)
+     console.log(age > 18 || age > 30); // true (OR → at least one true)
+     console.log(!(age > 18));          // false (NOT → reverses result)
+
+* 6. String Concatenation vs Template Literals
+ 
 
 
 
