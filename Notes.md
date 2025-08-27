@@ -1,3 +1,5 @@
+## NOTES
+
 DAY - 1 
    1 BASIC
 ---Console_playground---
