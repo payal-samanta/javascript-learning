@@ -37,7 +37,7 @@ function sum(a,b){
     console.log(a+b);
 }
 
-sum(1,2,3);   //1+2=3
+sum(1,2,8);   //1+2=3
 
 //using function called as default
 function getDefaultage(){
@@ -47,3 +47,17 @@ function getDefaultage(){
 function introduce(name = "anonymous", age = getDefaultage()){
     
 }
+
+
+//Using rest parameters
+function sum(...numbers){
+      let total = 0;
+      for (const num of numbers){
+        total +=num; 
+      }
+      return total;
+    }
+
+    consol.log(sum(1,2));                 //Outputs: 3
+    console.log(sum(10,20,30,40));        //output:100
+    console.log(sum());                   //Output: 0

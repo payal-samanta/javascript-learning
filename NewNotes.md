@@ -267,4 +267,86 @@
    - They work only when the argument is not passed or is undefined, but not when null is passed.
     
   # Rest Parameter (......args)
-   - 
+   - A feature that lets a function collect an unknown number of arguments into a single array.
+   - it's represent by (....name)
+    syntax- 
+    function sum(....numbers){
+      let total = 0;
+      for (const num of numbers){
+        total +=num; 
+      }
+      return total;
+    }
+
+    consol.log(sum(1,2));                 //Outputs: 3
+    console.log(sum(10,20,30,40));        //output:100
+    console.log(sum());                   //Output: 0
+
+  - In this example, ...numbers gathers all the arguments you pass into a single array called numbers
+
+ # Return Value
+  - A function uses the return statement to send a value back to the code that called it.
+  - Single Return Value 
+    syntax- 
+    funtion doubleMyNumber(number){
+      let result = numbers * 2;
+      return result;   //Give the result back 
+    }
+
+    let MyAnswer = doubleMyNumber(5);   //Call the funtion, catch what it gives back
+    console.log(MyAnswer);   //Output: 10
+
+  -Mutliple Return Value
+   JavaScript functions can only return one value directly. However, you can wrap multiple values inside an object or an array to return them together.
+   syntax-
+   function getUserInfo(){
+    let name = "Alex":
+    let age = "30";
+
+    //We put the info into one object {} to reutrn it 
+    return { name: name, age: age};
+   }
+
+   let user = gteUserInfo();
+   console.log(user.name)      //Output: Alex
+   console.log(user.age)       //Output: 30
+
+  # Scope 
+  - Global Scope            //(The Front Yard 🌳)
+    - Variables declared outside of any function are in the global scope.
+    - They can be accessed from anywhere in your code.
+    - It's best to minimize global variables to avoid conflicts.
+    synatx- 
+    let name = "Everybody can see me!";
+
+  - Function Scope           //(A Room 🏠)
+   - Variables declared inside a function (using var)
+   - are accessible only within that function.
+   syntax-
+   function myRoom(){
+    let mySecret = "Only visible inside myRoom";
+   }
+  
+  - Block Scope             //(A Closet inside a Room 🚪)
+   - Variables declared with let and const inside a block ({...})
+   - like an "if" statement or a "for" loop 
+   - only accessible within the block 
+   - most common & recommended 
+
+  # Shadowing variables
+  - when you declare variable in a inner scope with the same name as outer the inner varible hides(shadow) the outer one
+  syntax- 
+  let fruits = "Apple";   //Global variable
+
+  function eat(){
+    let fruits = "Orange";   //local varible, shadow the global fruit(variable)
+    console.log('inside funtion: ${fruits}')  // output: Inside function : Orange
+  }
+
+  eat();
+  console.log('Outside function: ${fruit}')   //output: Outside function: Apple
+
+  
+
+
+    
