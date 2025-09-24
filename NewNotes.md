@@ -192,3 +192,79 @@
        9
        10
     
+## Functions
+
+  # Function declaration
+
+  - instead of writing the whole code we can declare function onces and call that again and again 
+    syntax- 
+    function functionName(parameters){
+        //code to be executed
+        return value; //optional
+    }
+       return -  give back the value to caller 
+       console.log - just speak out loud but return- actually hands the value in screen otherwise it will be undefined 
+
+       eg - function add(a,b){
+             let sum = a+b;
+             return sum;
+       }
+
+       //call funtion 
+       console.log(add(10,12));
+
+       output- 22
+
+ # Function expression
+   - storing a function inside variable
+   syntax -
+   const variableName = function(parameters){
+    //code blocks
+    return value;
+   };
+
+   - it is not hoisted - means we can't call before decalring 
+    
+ # Arrow Function () => {}
+   - it just a shorter way to write function expression 
+     => instead of function keyword
+
+    syntax- 
+    const greet = (name) => {
+      return "Hello, " + name;
+    };
+
+  RULES OF ARROW FUNCTION-
+  1. If only one parameter, you can skip () 
+    syntax-
+    const square = x => x * x;
+    console.log(square(5)); //25
+
+  2. if no parameters use ()
+     syntax-
+    const sayHello = () => console.log("Hello");
+    sayHello();  //Hello
+
+  3. If only one line of code, you skip{} and return
+     syntax-
+     const add = (a,b) => a + b;
+     console.log(add(2,3));  //5
+
+ # Function Hositing 
+   - hoisting means that variable and function declarations are moved (hoisted) to the top of their scope before code execution.
+   - This allows you to use functions before you actually write them in code.
+  
+ # Parameters and arguments
+   - Parameters = placeholders in the function definition.
+   - Arguments = actual values you pass when calling the function.
+   - Missing arguments → undefined.
+   - Extra arguments → ignored (unless you use arguments object or rest parameter).
+   - You can use default values for parameters.
+
+ # Default parameters
+   - Default parameters prevent undefined values when arguments are missing.
+   - You can use strings, numbers, expressions, or even function calls as default values.
+   - They work only when the argument is not passed or is undefined, but not when null is passed.
+    
+  # Rest Parameter (......args)
+   - 
